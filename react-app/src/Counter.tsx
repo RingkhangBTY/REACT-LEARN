@@ -1,12 +1,11 @@
 import {useState} from "react";
 
-// this tells the type of data that props will accept & proceed with that
-type propsType = {
+type Types = {
     name: string;
     age: number;
 };
 
-function Counter({name,age}: propsType) {
+function Counter({name,age}: Types) {
     const [count, setCount] = useState(0);
 
     return (
@@ -16,8 +15,7 @@ function Counter({name,age}: propsType) {
 
             <button onClick={()=> {
                 setCount(count+1)
-            }} >
-                Increase</button>
+            }} >Increase</button>
 
             <button onClick={()=> setCount(count-1) }>Decrease</button>
         </div>
