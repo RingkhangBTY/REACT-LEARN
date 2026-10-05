@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+    min-height: 100vh;
+    background: #eef5f5;
+    color: #222;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    transition: 0.3s;
+}
+
+.app.dark {
+    background: #202025;
+    color: white;
+}
+
+.gamer-page {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.input-card {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.app.dark .input-card {
+    background: #29292f;
+    border-color: #3a3a42;
+    box-shadow: none;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 4px;
+    margin-top: 5px;
+}
+
+input {
+    width: 100%;
+    height: 27px;
+    padding: 5px 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #777;
+}
+
+.app.dark input {
+    background: #18181c;
+    color: white;
+    border-color: #444;
+}
+
+select {
+    width: 100%;
+    height: 27px;
+    padding: 3px 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+    background: white;
+    color: #222;
+    outline: none;
+}
+
+.app.dark select {
+    background: #18181c;
+    color: white;
+    border-color: #444;
+}
+
+.profile-card {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.app.dark .profile-card {
+    background: #29292f;
+    border-color: #3a3a42;
+    box-shadow: none;
+}
+
+.profile-card h2 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.profile-card p span {
+    font-weight: bold;
+}
+
+.xp-row {
+    display: flex;
+    gap: 18px;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.xp-button {
+    background: #287be5;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 6px 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.xp-button:hover {
+    background: #1769d0;
+}
+
+.xp-message {
+    margin-top: 8px;
+    padding: 5px 8px;
+    font-size: 11px;
+    background: #dff2df;
+    color: #347a34;
+    border: 1px solid #c7e6c7;
+    border-radius: 2px;
+}
+
+.app.dark .xp-message {
+    background: #123a20;
+    color: #65c878;
+    border-color: #1d5b30;
+}
+
+.reset-button {
+    margin-top: 8px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.theme-button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 3px;
+    background: #333;
+    color: white;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.theme-button:hover {
+    opacity: 0.85;
+}
+
+.app.dark .theme-button {
+    background: white;
+    color: #222;
+}
+
+@media (max-width: 500px) {
+    .gamer-page {
+        width: 94%;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}
