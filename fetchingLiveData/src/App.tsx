@@ -1,9 +1,10 @@
 import MovieDetails from "./MovieDetails.tsx";
+import UseReducerExample from "./UseReducerExample.tsx";
 
 function App() {
   return (
       <div>
-        <MovieDetails/>
+          <UseReducerExample/>
       </div>
   )
 }
